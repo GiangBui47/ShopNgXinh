@@ -1,0 +1,798 @@
+{
+    "users": [
+        {
+            "user_id": 1,
+            "email": "emma.wilson@email.com",
+            "password_hash": "hashed_password_123",
+            "first_name": "Emma",
+            "last_name": "Wilson",
+            "phone_number": "+33123456789",
+            "date_of_birth": "1990-05-15",
+            "gender": "female",
+            "created_at": "2023-01-15T10:30:00Z",
+            "updated_at": "2024-01-10T14:20:00Z",
+            "last_login": "2024-01-20T09:15:00Z",
+            "is_active": true,
+            "newsletter_subscription": true
+        },
+        {
+            "user_id": 2,
+            "email": "lucas.martin@email.com",
+            "password_hash": "hashed_password_456",
+            "first_name": "Lucas",
+            "last_name": "Martin",
+            "phone_number": "+33123456780",
+            "date_of_birth": "1988-11-22",
+            "gender": "male",
+            "created_at": "2023-03-20T16:45:00Z",
+            "updated_at": "2024-01-18T11:30:00Z",
+            "last_login": "2024-01-19T16:20:00Z",
+            "is_active": true,
+            "newsletter_subscription": false
+        },
+        {
+            "user_id": 3,
+            "email": "sophie.dupont@email.com",
+            "password_hash": "hashed_password_789",
+            "first_name": "Sophie",
+            "last_name": "Dupont",
+            "phone_number": "+33123456781",
+            "date_of_birth": "1992-08-30",
+            "gender": "female",
+            "created_at": "2023-06-10T14:20:00Z",
+            "updated_at": "2024-01-15T08:45:00Z",
+            "last_login": "2024-01-18T10:30:00Z",
+            "is_active": true,
+            "newsletter_subscription": true
+        }
+    ],
+    "addresses": [
+        {
+            "address_id": 1,
+            "user_id": 1,
+            "address_type": "shipping",
+            "street_address": "123 Rue de la Paix",
+            "city": "Paris",
+            "postal_code": "75002",
+            "country": "France",
+            "is_default": true
+        },
+        {
+            "address_id": 2,
+            "user_id": 1,
+            "address_type": "billing",
+            "street_address": "123 Rue de la Paix",
+            "city": "Paris",
+            "postal_code": "75002",
+            "country": "France",
+            "is_default": true
+        },
+        {
+            "address_id": 3,
+            "user_id": 2,
+            "address_type": "shipping",
+            "street_address": "45 Avenue des Champs-Élysées",
+            "city": "Paris",
+            "postal_code": "75008",
+            "country": "France",
+            "is_default": true
+        }
+    ],
+    "product_categories": [
+        {
+            "category_id": 1,
+            "category_name": "SHOP",
+            "parent_category_id": null,
+            "category_description": "All clothing items including dresses, tops, and more",
+            "category_image": "category_shop"
+        },
+        {
+            "category_id": 2,
+            "category_name": "DRESS",
+            "parent_category_id": 1,
+            "category_description": "Elegant dresses for every occasion",
+            "category_image": "category_dress"
+        },
+        {
+            "category_id": 3,
+            "category_name": "TOPS",
+            "parent_category_id": 1,
+            "category_description": "Beautiful tops and blouses",
+            "category_image": "category_tops"
+        },
+        {
+            "category_id": 18,
+            "category_name": "COATS",
+            "parent_category_id": 1,
+            "category_description": "Bags, jewelry and accessories",
+            "category_image": "category_coats"
+        },
+        {
+            "category_id": 5,
+            "category_name": "BAGS",
+            "parent_category_id": 4,
+            "category_description": "Handbags and purses",
+            "category_image": "category_bag"
+        },
+        {
+            "category_id": 6,
+            "category_name": "JACKETS",
+            "parent_category_id": 4,
+            "category_description": "Handbags and purses",
+            "category_image": "category_jackets"
+        },
+        {
+            "category_id": 7,
+            "category_name": "SHOES",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_shoe"
+        },
+        {
+            "category_id": 8,
+            "category_name": "JEWELRY",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_jewelry"
+        },
+        {
+            "category_id": 9,
+            "category_name": "TROUSERS",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_trousers"
+        },
+        {
+            "category_id": 10,
+            "category_name": "KNITWEAR",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_knitwear"
+        },
+        {
+            "category_id": 11,
+            "category_name": "DENIM",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_knitwear"
+        },
+        {
+            "category_id": 12,
+            "category_name": "SKIRTS & SHORTS",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_knitwear"
+        },
+        {
+            "category_id": 13,
+            "category_name": "T-SHIRTS & JERSEY",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_knitwear"
+        },
+        {
+            "category_id": 14,
+            "category_name": "LEATHER GOODS",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_knitwear"
+        },
+        {
+            "category_id": 15,
+            "category_name": "TIGHTS & SOCKS",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_knitwear"
+        },
+        {
+            "category_id": 16,
+            "category_name": "LIFESTYLES",
+            "parent_category_id": 1,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_knitwear"
+        },
+        {
+            "category_id": 4,
+            "category_name": "ACCESSORIES",
+            "parent_category_id": null,
+            "category_description": "Cozy sweaters and cardigans",
+            "category_image": "category_knitwear"
+        }
+    ],
+    "products": [
+        {
+            "product_id": 1,
+            "product_name": "Gabin Dress",
+            "product_description": "Elegant midi dress with floral pattern, perfect for special occasions. Made from sustainable materials.",
+            "category_id": 2,
+            "brand": "Sézane",
+            "price": 145.00,
+            "sale_price": null,
+            "sku": "SEZ-DRESS-001",
+            "material": "Organic Cotton, Sustainable Viscose",
+            "care_instructions": "Machine wash cold, line dry",
+            "sustainability_info": "Made with organic cotton and sustainable viscose",
+            "created_at": "2024-01-01T00:00:00Z",
+            "is_active": true
+        },
+        {
+            "product_id": 2,
+            "product_name": "Will Jacket",
+            "product_description": "Classic beige trench coat with timeless design. Water-resistant and perfect for transitional weather.",
+            "category_id": 6,
+            "brand": "Sézane",
+            "price": 189.00,
+            "sale_price": 159.00,
+            "sku": "SEZ-JACKET-001",
+            "material": "Organic Cotton, Recycled Polyester",
+            "care_instructions": "Dry clean only",
+            "sustainability_info": "Made with recycled materials",
+            "created_at": "2024-01-02T00:00:00Z",
+            "is_active": true
+        },
+        {
+            "product_id": 3,
+            "product_name": "Basile Sweater",
+            "product_description": "Soft cashmere sweater in classic navy blue. Perfect for cozy days.",
+            "category_id": 12,
+            "brand": "Sézane",
+            "price": 125.00,
+            "sale_price": null,
+            "sku": "SEZ-SWEATER-001",
+            "material": "Responsible Cashmere",
+            "care_instructions": "Hand wash cold, lay flat to dry",
+            "sustainability_info": "Responsibly sourced cashmere",
+            "created_at": "2024-01-03T00:00:00Z",
+            "is_active": true
+        },
+        {
+            "product_id": 4,
+            "product_name": "Auguste Bag",
+            "product_description": "Leather crossbody bag in tan color. Features multiple compartments and adjustable strap.",
+            "category_id": 3,
+            "brand": "Sézane",
+            "price": 195.00,
+            "sale_price": 175.00,
+            "sku": "SEZ-BAG-001",
+            "material": "Vegetable-Tanned Leather",
+            "care_instructions": "Wipe clean with damp cloth",
+            "sustainability_info": "Vegetable-tanned leather",
+            "created_at": "2024-01-04T00:00:00Z",
+            "is_active": true
+        },
+        {
+            "product_id": 5,
+            "product_name": "Limited Edition Art Dress",
+            "product_description": "Exclusive limited edition dress with unique artwork print. Only 50 pieces available worldwide.",
+            "category_id": 2,
+            "brand": "Sézane",
+            "price": 220.00,
+            "sale_price": null,
+            "sku": "SEZ-LE-ART-001",
+            "material": "Silk, Organic Cotton",
+            "care_instructions": "Dry clean only",
+            "sustainability_info": "Handcrafted with artisanal techniques",
+            "created_at": "2024-01-05T00:00:00Z",
+            "is_active": true
+        }
+    ],
+    "product_inventory": [
+        {
+            "inventory_id": 1,
+            "product_id": 1,
+            "size": "XS",
+            "color": "Floral Print",
+            "stock_quantity": 15,
+            "reorder_level": 5
+        },
+        {
+            "inventory_id": 2,
+            "product_id": 1,
+            "size": "S",
+            "color": "Floral Print",
+            "stock_quantity": 12,
+            "reorder_level": 5
+        },
+        {
+            "inventory_id": 3,
+            "product_id": 1,
+            "size": "M",
+            "color": "Floral Print",
+            "stock_quantity": 8,
+            "reorder_level": 5
+        },
+        {
+            "inventory_id": 4,
+            "product_id": 2,
+            "size": "S",
+            "color": "Beige",
+            "stock_quantity": 10,
+            "reorder_level": 3
+        },
+        {
+            "inventory_id": 5,
+            "product_id": 2,
+            "size": "M",
+            "color": "Beige",
+            "stock_quantity": 6,
+            "reorder_level": 3
+        },
+        {
+            "inventory_id": 6,
+            "product_id": 3,
+            "size": "XS",
+            "color": "Navy Blue",
+            "stock_quantity": 20,
+            "reorder_level": 8
+        },
+        {
+            "inventory_id": 7,
+            "product_id": 3,
+            "size": "S",
+            "color": "Navy Blue",
+            "stock_quantity": 18,
+            "reorder_level": 8
+        },
+        {
+            "inventory_id": 8,
+            "product_id": 4,
+            "size": "S",
+            "color": "Tan",
+            "stock_quantity": 25,
+            "reorder_level": 10
+        },
+        {
+            "inventory_id": 9,
+            "product_id": 5,
+            "size": "S",
+            "color": "Art Print",
+            "stock_quantity": 15,
+            "reorder_level": 2
+        },
+        {
+            "inventory_id": 10,
+            "product_id": 5,
+            "size": "M",
+            "color": "Art Print",
+            "stock_quantity": 15,
+            "reorder_level": 2
+        }
+    ],
+    "product_images": [
+        {
+            "image_id": 1,
+            "product_id": 1,
+            "image_url": "category_knitwear",
+            "alt_text": "Gabin Dress front view",
+            "display_order": 1
+        },
+        {
+            "image_id": 2,
+            "product_id": 1,
+            "image_url": "category_trousers",
+            "alt_text": "Gabin Dress back view",
+            "display_order": 2
+        },
+        {
+            "image_id": 3,
+            "product_id": 2,
+            "image_url": "image_product",
+            "alt_text": "Will Jacket front view",
+            "display_order": 1
+        },
+        {
+            "image_id": 4,
+            "product_id": 3,
+            "image_url": "image_product",
+            "alt_text": "Basile Sweater front view",
+            "display_order": 1
+        },
+        {
+            "image_id": 5,
+            "product_id": 4,
+            "image_url": "image_product",
+            "alt_text": "Auguste Bag front view",
+            "display_order": 1
+        },
+        {
+            "image_id": 6,
+            "product_id": 5,
+            "image_url": "category_trousers",
+            "alt_text": "Limited Edition Art Dress front view",
+            "display_order": 1
+        },
+        {
+            "image_id": 7,
+            "product_id": 5,
+            "image_url": "category_trousers",
+            "alt_text": "Limited Edition Art Dress front view",
+            "display_order": 1
+        }
+    ],
+    "sustainability_attributes": [
+        {
+            "sustainability_id": 1,
+            "product_id": 1,
+            "organic_materials": true,
+            "recycled_materials": false,
+            "sustainable_viscose": true,
+            "eco_friendly_dyes": true,
+            "water_saving": 45,
+            "carbon_footprint_kg": 2.3,
+            "fair_trade_certified": true,
+            "biodegradable": false,
+            "repairability_score": 8,
+            "sustainability_certifications": [
+                "GOTS",
+                "OEKO-TEX"
+            ]
+        },
+        {
+            "sustainability_id": 2,
+            "product_id": 2,
+            "organic_materials": true,
+            "recycled_materials": true,
+            "sustainable_viscose": false,
+            "eco_friendly_dyes": true,
+            "water_saving": 60,
+            "carbon_footprint_kg": 1.8,
+            "fair_trade_certified": true,
+            "biodegradable": false,
+            "repairability_score": 9,
+            "sustainability_certifications": [
+                "GRS",
+                "OEKO-TEX"
+            ]
+        },
+        {
+            "sustainability_id": 3,
+            "product_id": 3,
+            "organic_materials": false,
+            "recycled_materials": false,
+            "sustainable_viscose": false,
+            "eco_friendly_dyes": true,
+            "water_saving": 30,
+            "carbon_footprint_kg": 3.1,
+            "fair_trade_certified": true,
+            "biodegradable": true,
+            "repairability_score": 7,
+            "sustainability_certifications": [
+                "Responsible Cashmere Standard"
+            ]
+        },
+        {
+            "sustainability_id": 4,
+            "product_id": 4,
+            "organic_materials": false,
+            "recycled_materials": false,
+            "sustainable_viscose": false,
+            "eco_friendly_dyes": true,
+            "water_saving": 70,
+            "carbon_footprint_kg": 4.2,
+            "fair_trade_certified": true,
+            "biodegradable": true,
+            "repairability_score": 8,
+            "sustainability_certifications": [
+                "Vegetable Tanning",
+                "LWG Certified"
+            ]
+        }
+    ],
+    "seasonal_collections": [
+        {
+            "collection_id": 1,
+            "name": "Spring Blooms 2024",
+            "season": "Spring",
+            "year": 2024,
+            "description": "Fresh and floral collection for spring days",
+            "active": true,
+            "start_date": "2024-02-01",
+            "end_date": "2024-05-31",
+            "collection_image": "/images/collections/spring-blooms-2024.jpg"
+        },
+        {
+            "collection_id": 2,
+            "name": "Summer Breeze 2024",
+            "season": "Summer",
+            "year": 2024,
+            "description": "Light and airy pieces for summer adventures",
+            "active": false,
+            "start_date": "2024-06-01",
+            "end_date": "2024-08-31",
+            "collection_image": "/images/collections/summer-breeze-2024.jpg"
+        },
+        {
+            "collection_id": 3,
+            "name": "Winter Cozy 2023",
+            "season": "Winter",
+            "year": 2023,
+            "description": "Warm and cozy styles for winter",
+            "active": false,
+            "start_date": "2023-11-01",
+            "end_date": "2024-01-31",
+            "collection_image": "/images/collections/winter-cozy-2023.jpg"
+        }
+    ],
+    "product_collections": [
+        {
+            "product_collection_id": 1,
+            "product_id": 1,
+            "collection_id": 1,
+            "featured": true
+        },
+        {
+            "product_collection_id": 2,
+            "product_id": 2,
+            "collection_id": 1,
+            "featured": false
+        },
+        {
+            "product_collection_id": 3,
+            "product_id": 3,
+            "collection_id": 3,
+            "featured": true
+        },
+        {
+            "product_collection_id": 4,
+            "product_id": 4,
+            "collection_id": 3,
+            "featured": true
+        },
+        {
+            "product_collection_id": 5,
+            "product_id": 5,
+            "collection_id": 3,
+            "featured": true
+        },
+        {
+            "product_collection_id": 6,
+            "product_id": 6,
+            "collection_id": 3,
+            "featured": true
+        }
+    ],
+    "limited_editions": [
+        {
+            "limited_id": 1,
+            "product_id": 5,
+            "total_quantity": 50,
+            "sold_count": 12,
+            "release_date": "2024-01-15",
+            "end_date": "2024-03-15",
+            "is_active": true,
+            "edition_number": "LE-2024-001"
+        }
+    ],
+    "loyalty_members": [
+        {
+            "loyalty_id": 1,
+            "user_id": 1,
+            "points_balance": 1250,
+            "tier": "Gold",
+            "join_date": "2023-01-15",
+            "lifetime_points": 1850,
+            "next_tier_points": 2000,
+            "last_activity_date": "2024-01-20"
+        },
+        {
+            "loyalty_id": 2,
+            "user_id": 2,
+            "points_balance": 450,
+            "tier": "Silver",
+            "join_date": "2023-03-20",
+            "lifetime_points": 650,
+            "next_tier_points": 1000,
+            "last_activity_date": "2024-01-19"
+        }
+    ],
+    "loyalty_transactions": [
+        {
+            "transaction_id": 1,
+            "loyalty_id": 1,
+            "points": 150,
+            "transaction_type": "earn",
+            "order_id": 1,
+            "description": "Purchase earned points",
+            "transaction_date": "2024-01-20T10:30:00Z"
+        },
+        {
+            "transaction_id": 2,
+            "loyalty_id": 1,
+            "points": -50,
+            "transaction_type": "redeem",
+            "order_id": null,
+            "description": "Redeemed for discount",
+            "transaction_date": "2023-12-15T14:20:00Z"
+        }
+    ],
+    "shopping_cart": [
+        {
+            "cart_id": 1,
+            "user_id": 1,
+            "product_id": 1,
+            "quantity": 1,
+            "size": "S",
+            "color": "Floral Print",
+            "added_date": "2024-01-20T09:15:00Z"
+        },
+        {
+            "cart_id": 2,
+            "user_id": 1,
+            "product_id": 4,
+            "quantity": 1,
+            "size": "One Size",
+            "color": "Tan",
+            "added_date": "2024-01-20T09:20:00Z"
+        }
+    ],
+    "wishlist": [
+        {
+            "wishlist_id": 1,
+            "user_id": 1,
+            "product_id": 3,
+            "added_date": "2024-01-18T11:30:00Z"
+        },
+        {
+            "wishlist_id": 2,
+            "user_id": 2,
+            "product_id": 5,
+            "added_date": "2024-01-19T16:20:00Z"
+        }
+    ],
+    "orders": [
+        {
+            "order_id": 1,
+            "user_id": 1,
+            "order_date": "2024-01-20T10:30:00Z",
+            "order_status": "delivered",
+            "total_amount": 145.00,
+            "shipping_address_id": 1,
+            "billing_address_id": 2,
+            "shipping_method": "express",
+            "tracking_number": "TRK123456789",
+            "delivered_date": "2024-01-22T14:00:00Z"
+        },
+        {
+            "order_id": 2,
+            "user_id": 2,
+            "order_date": "2024-01-19T16:20:00Z",
+            "order_status": "shipped",
+            "total_amount": 189.00,
+            "shipping_address_id": 3,
+            "billing_address_id": 3,
+            "shipping_method": "standard",
+            "tracking_number": "TRK987654321",
+            "delivered_date": null
+        }
+    ],
+    "order_items": [
+        {
+            "order_item_id": 1,
+            "order_id": 1,
+            "product_id": 1,
+            "quantity": 1,
+            "unit_price": 145.00,
+            "size": "S",
+            "color": "Floral Print"
+        },
+        {
+            "order_item_id": 2,
+            "order_id": 2,
+            "product_id": 2,
+            "quantity": 1,
+            "unit_price": 189.00,
+            "size": "S",
+            "color": "Beige"
+        }
+    ],
+    "reviews": [
+        {
+            "review_id": 1,
+            "product_id": 1,
+            "user_id": 1,
+            "rating": 5,
+            "review_text": "Absolutely love this dress! The fit is perfect and the material is so comfortable.",
+            "review_date": "2024-01-23T08:45:00Z",
+            "is_verified_purchase": true
+        },
+        {
+            "review_id": 2,
+            "product_id": 2,
+            "user_id": 2,
+            "rating": 4,
+            "review_text": "Great quality jacket, runs a bit large though.",
+            "review_date": "2024-01-21T12:30:00Z",
+            "is_verified_purchase": true
+        }
+    ],
+    "promotions": [
+        {
+            "promotion_id": 1,
+            "promotion_code": "WELCOME10",
+            "discount_type": "percentage",
+            "discount_value": 10,
+            "minimum_order_amount": 50.00,
+            "start_date": "2024-01-01",
+            "end_date": "2024-12-31",
+            "usage_limit": 1,
+            "times_used": 45,
+            "is_active": true
+        },
+        {
+            "promotion_id": 2,
+            "promotion_code": "SALE20",
+            "discount_type": "percentage",
+            "discount_value": 20,
+            "minimum_order_amount": 100.00,
+            "start_date": "2024-01-15",
+            "end_date": "2024-02-15",
+            "usage_limit": null,
+            "times_used": 128,
+            "is_active": true
+        }
+    ],
+    "shipping_methods": [
+        {
+            "shipping_method_id": 1,
+            "method_name": "Standard Shipping",
+            "description": "5-7 business days",
+            "cost": 4.99,
+            "delivery_time": "5-7 days",
+            "countries_available": [
+                "FR",
+                "DE",
+                "UK",
+                "ES",
+                "IT"
+            ]
+        },
+        {
+            "shipping_method_id": 2,
+            "method_name": "Express Shipping",
+            "description": "2-3 business days",
+            "cost": 9.99,
+            "delivery_time": "2-3 days",
+            "countries_available": [
+                "FR",
+                "DE",
+                "UK",
+                "ES",
+                "IT"
+            ]
+        },
+        {
+            "shipping_method_id": 3,
+            "method_name": "Free Shipping",
+            "description": "Free shipping on orders over €100",
+            "cost": 0.00,
+            "delivery_time": "5-7 days",
+            "countries_available": [
+                "FR",
+                "DE",
+                "UK",
+                "ES",
+                "IT"
+            ]
+        }
+    ],
+    "payment_transactions": [
+        {
+            "transaction_id": 1,
+            "order_id": 1,
+            "payment_method": "credit_card",
+            "amount": 145.00,
+            "transaction_status": "completed",
+            "transaction_date": "2024-01-20T10:31:00Z",
+            "payment_gateway_reference": "PAY-00123456"
+        },
+        {
+            "transaction_id": 2,
+            "order_id": 2,
+            "payment_method": "paypal",
+            "amount": 189.00,
+            "transaction_status": "completed",
+            "transaction_date": "2024-01-19T16:21:00Z",
+            "payment_gateway_reference": "PAY-00765432"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Oswald', 'Oswald-fallback', sans-serif;
+  font-synthesis: none;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Signature-style cursive font for logo */
+.logo-font {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+
+body {
+  margin: 0;
+
+  /* Use custom image if available, fall back to a subtle CSS pattern */
+  background-image: url('/background-pattern.png'),
+    radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-repeat: repeat;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+li {
+  font-family: "Libre Baskerville", "Times New Roman", serif;
+  font-size: 13px;
+
+}
