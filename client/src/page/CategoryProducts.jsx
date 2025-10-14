@@ -6,7 +6,7 @@ import { toUrlSlug } from '../utils';
 
 const CategoryProducts = () => {
     const { path } = useParams();
-    const { categories, products, selectedCategory } = useContext(AppContext);
+    const { categories, products, selectedCategory, setSelectedCategory } = useContext(AppContext);
 
     const [currentCategory, setCurrentCategory] = useState(null);
     const [displayProducts, setDisplayProducts] = useState([]);
@@ -15,25 +15,28 @@ const CategoryProducts = () => {
         let categoryToSet = null;
         let productsToSet = [];
 
-        if (selectedCategory && categories) {
-            categoryToSet = categories.find(c => c.category_id === selectedCategory);
-        }
-        if (!categoryToSet && path && categories) {
+        if (path && categories) {
             const foundCategory = categories.find(c => toUrlSlug(c.category_name) === path);
-
             if (foundCategory) {
                 categoryToSet = foundCategory;
+                setSelectedCategory(foundCategory.category_id);
             }
         }
+
+        if (!categoryToSet && selectedCategory && categories) {
+            categoryToSet = categories.find(c => c.category_id === selectedCategory);
+        }
+
         if (!categoryToSet) {
             productsToSet = products;
         } else {
             productsToSet = products.filter(p => p.category_id === categoryToSet.category_id);
         }
+
         setCurrentCategory(categoryToSet);
         setDisplayProducts(productsToSet);
 
-    }, [path, categories, products, selectedCategory]);
+    }, [path, categories, products, selectedCategory, setSelectedCategory]);
 
     const displayName = currentCategory?.category_name || 'All Products';
 

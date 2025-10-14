@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer style={{ fontFamily: '"Libre Baskerville", "Times New Roman", serif', fontSize: "13px" }}
             class="flex flex-col overflow-hidden gap-10 md:gap-20
-             py-16 px-6 md:px-16 lg:px-24 xl:px-32  [&>li]:hover:underline ">
+             py-16 px-4 lg:px-16  [&>li]:hover:underline ">
             <div className='flex flex-wrap justify-center lg:justify-between'>
                 <div className='hidden lg:block'>
                     <h4 className="text-black text-[15px] mb-7">NEED HELPS</h4>

@@ -282,6 +282,7 @@
             "product_id": 1,
             "size": "XS",
             "color": "Floral Print",
+            "color_code": "#FF6B6B",
             "stock_quantity": 15,
             "reorder_level": 5
         },
@@ -290,6 +291,7 @@
             "product_id": 1,
             "size": "S",
             "color": "Floral Print",
+            "color_code": "#FF6B6B",
             "stock_quantity": 12,
             "reorder_level": 5
         },
@@ -298,115 +300,151 @@
             "product_id": 1,
             "size": "M",
             "color": "Floral Print",
+            "color_code": "#FF6B6B",
             "stock_quantity": 8,
             "reorder_level": 5
         },
         {
             "inventory_id": 4,
-            "product_id": 2,
+            "product_id": 1,
             "size": "S",
-            "color": "Beige",
+            "color": "Midnight Blue",
+            "color_code": "#2C3E50",
             "stock_quantity": 10,
             "reorder_level": 3
         },
         {
             "inventory_id": 5,
-            "product_id": 2,
+            "product_id": 1,
             "size": "M",
-            "color": "Beige",
+            "color": "Midnight Blue",
+            "color_code": "#2C3E50",
             "stock_quantity": 6,
             "reorder_level": 3
         },
         {
             "inventory_id": 6,
-            "product_id": 3,
-            "size": "XS",
-            "color": "Navy Blue",
-            "stock_quantity": 20,
-            "reorder_level": 8
+            "product_id": 1,
+            "size": "L",
+            "color": "Blush Pink",
+            "color_code": "#F8C8DC",
+            "stock_quantity": 5,
+            "reorder_level": 3
+        }
+    ],
+    "product_colors": [
+        {
+            "color_id": 1,
+            "product_id": 1,
+            "color_name": "Floral Print",
+            "color_code": "#FF6B6B",
+            "display_order": 1
         },
         {
-            "inventory_id": 7,
-            "product_id": 3,
-            "size": "S",
-            "color": "Navy Blue",
-            "stock_quantity": 18,
-            "reorder_level": 8
+            "color_id": 2,
+            "product_id": 1,
+            "color_name": "Midnight Blue",
+            "color_code": "#2C3E50",
+            "display_order": 2
         },
         {
-            "inventory_id": 8,
-            "product_id": 4,
-            "size": "S",
-            "color": "Tan",
-            "stock_quantity": 25,
-            "reorder_level": 10
-        },
-        {
-            "inventory_id": 9,
-            "product_id": 5,
-            "size": "S",
-            "color": "Art Print",
-            "stock_quantity": 15,
-            "reorder_level": 2
-        },
-        {
-            "inventory_id": 10,
-            "product_id": 5,
-            "size": "M",
-            "color": "Art Print",
-            "stock_quantity": 15,
-            "reorder_level": 2
+            "color_id": 3,
+            "product_id": 1,
+            "color_name": "Blush Pink",
+            "color_code": "#F8C8DC",
+            "display_order": 3
         }
     ],
     "product_images": [
         {
             "image_id": 1,
             "product_id": 1,
-            "image_url": "category_knitwear",
-            "alt_text": "Gabin Dress front view",
-            "display_order": 1
+            "color_id": 1,
+            "image_url": "image_product",
+            "alt_text": "Gabin Dress Floral Print - Front View",
+            "display_order": 1,
+            "image_type": "front"
         },
         {
             "image_id": 2,
             "product_id": 1,
-            "image_url": "category_trousers",
-            "alt_text": "Gabin Dress back view",
-            "display_order": 2
+            "color_id": 1,
+            "image_url": "image_product",
+            "alt_text": "Gabin Dress Floral Print - Back View",
+            "display_order": 2,
+            "image_type": "back"
         },
         {
             "image_id": 3,
-            "product_id": 2,
+            "product_id": 1,
+            "color_id": 1,
             "image_url": "image_product",
-            "alt_text": "Will Jacket front view",
-            "display_order": 1
+            "alt_text": "Gabin Dress Floral Print - Side View",
+            "display_order": 3,
+            "image_type": "side"
         },
         {
             "image_id": 4,
-            "product_id": 3,
+            "product_id": 1,
+            "color_id": 1,
             "image_url": "image_product",
-            "alt_text": "Basile Sweater front view",
-            "display_order": 1
+            "alt_text": "Gabin Dress Floral Print - Detail",
+            "display_order": 4,
+            "image_type": "detail"
         },
         {
             "image_id": 5,
-            "product_id": 4,
+            "product_id": 1,
+            "color_id": 2,
             "image_url": "image_product",
-            "alt_text": "Auguste Bag front view",
-            "display_order": 1
+            "alt_text": "Gabin Dress Midnight Blue - Front View",
+            "display_order": 1,
+            "image_type": "front"
         },
         {
             "image_id": 6,
-            "product_id": 5,
-            "image_url": "category_trousers",
-            "alt_text": "Limited Edition Art Dress front view",
-            "display_order": 1
+            "product_id": 1,
+            "color_id": 2,
+            "image_url": "image_product",
+            "alt_text": "Gabin Dress Midnight Blue - Back View",
+            "display_order": 2,
+            "image_type": "back"
         },
         {
             "image_id": 7,
-            "product_id": 5,
-            "image_url": "category_trousers",
-            "alt_text": "Limited Edition Art Dress front view",
-            "display_order": 1
+            "product_id": 1,
+            "color_id": 2,
+            "image_url": "image_product",
+            "alt_text": "Gabin Dress Midnight Blue - Detail",
+            "display_order": 3,
+            "image_type": "detail"
+        },
+        {
+            "image_id": 8,
+            "product_id": 1,
+            "color_id": 3,
+            "image_url": "image_product",
+            "alt_text": "Gabin Dress Blush Pink - Front View",
+            "display_order": 1,
+            "image_type": "front"
+        },
+        {
+            "image_id": 9,
+            "product_id": 1,
+            "color_id": 3,
+            "image_url": "image_product",
+            "alt_text": "Gabin Dress Blush Pink - Back View",
+            "display_order": 2,
+            "image_type": "back"
+        },
+        {
+            "image_id": 10,
+            "product_id": 1,
+            "color_id": 3,
+            "image_url": "image_product",
+            "alt_text": "Gabin Dress Blush Pink - Side View",
+            "display_order": 3,
+            "image_type": "side"
         }
     ],
     "sustainability_attributes": [

@@ -10,6 +10,8 @@ import Shop from './page/Shop';
 import About from './page/About';
 import FAQ from './page/FAQ';
 import ScrollToTop from './Components/ScrollToTop';
+import Accessories from './page/Accessories';
+import ProductDetail from './page/ProductDetail';
 
 const App = () => {
   const location = useLocation();
@@ -27,10 +29,12 @@ const App = () => {
         <div>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path="/*" element={<CategoryProducts />} />
+            <Route path="/collection/:path" element={<CategoryProducts />} />
             <Route path="/collection" element={<Shop />} />
+            <Route path="/accessories" element={<Accessories />} />
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
           </Routes>
         </div>
         <Footer />

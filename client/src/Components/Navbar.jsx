@@ -34,10 +34,10 @@ const Navbar = () => {
     };
 
     const navLinks = [
-        { name: 'SHOP', path: '/collection', category_id: 1 },
-        { name: 'NEW IN', path: '/new-in', category_id: null },
-        { name: 'BEST SELLERS', path: '/best-sellers', category_id: null },
-        { name: 'ACCESSORIES', path: '/accessories', category_id: 4 },
+        { name: 'SHOP', path: '/collection' },
+        { name: 'NEW IN', path: '/new-in' },
+        { name: 'BEST SELLERS', path: '/best-sellers' },
+        { name: 'ACCESSORIES', path: '/accessories' },
         { name: 'CHILDREN', path: '/children', category_id: null },
         { name: 'MEN', path: '/men', category_id: null },
         { name: 'ABOUT', path: '/about', category_id: null },
@@ -142,7 +142,7 @@ const Navbar = () => {
         <>
             <nav
                 ref={navRef}
-                className={`absolute w-full flex items-center justify-between px-4 lg:px-24 transition-all duration-500 z-40
+                className={`absolute w-full flex items-center justify-between px-4 lg:px-16 transition-all duration-500 z-40
                 ${isScrolledOrHovered
                         ? 'bg-[url("/background-pattern.png")] bg-repeat py-3 md:py-6'
                         : 'bg-transparent py-4 md:py-6'

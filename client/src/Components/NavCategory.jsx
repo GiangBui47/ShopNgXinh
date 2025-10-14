@@ -11,7 +11,28 @@ const NavCategory = () => {
         let parentName = key;
         const parentCat = categories?.find(c => c.category_name?.toUpperCase() === parentName.toUpperCase());
         if (!parentCat) return [];
-        const basePath = '/collection';
+
+        let basePath;
+        switch (parentName.toUpperCase()) {
+            case 'SHOP':
+                basePath = '/collection';
+                break;
+            case 'ACCESSORIES':
+                basePath = '/accessories';
+                break;
+            case 'CHILDREN':
+                basePath = '/children';
+                break;
+            case 'MEN':
+                basePath = '/men';
+                break;
+            case 'NEW IN':
+            case 'BEST SELLERS':
+                return [];
+            default:
+                basePath = '/collection';
+        }
+
         return categories
             .filter(c => c.parent_category_id === parentCat.category_id)
             .map(c => {
