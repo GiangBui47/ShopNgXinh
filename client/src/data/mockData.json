@@ -101,7 +101,7 @@
             "category_image": "category_tops"
         },
         {
-            "category_id": 18,
+            "category_id": 4,
             "category_name": "COATS",
             "parent_category_id": 1,
             "category_description": "Bags, jewelry and accessories",
@@ -110,14 +110,14 @@
         {
             "category_id": 5,
             "category_name": "BAGS",
-            "parent_category_id": 4,
+            "parent_category_id": 1,
             "category_description": "Handbags and purses",
             "category_image": "category_bag"
         },
         {
             "category_id": 6,
             "category_name": "JACKETS",
-            "parent_category_id": 4,
+            "parent_category_id": 1,
             "category_description": "Handbags and purses",
             "category_image": "category_jackets"
         },
@@ -188,13 +188,6 @@
             "category_id": 16,
             "category_name": "LIFESTYLES",
             "parent_category_id": 1,
-            "category_description": "Cozy sweaters and cardigans",
-            "category_image": "category_knitwear"
-        },
-        {
-            "category_id": 4,
-            "category_name": "ACCESSORIES",
-            "parent_category_id": null,
             "category_description": "Cozy sweaters and cardigans",
             "category_image": "category_knitwear"
         }

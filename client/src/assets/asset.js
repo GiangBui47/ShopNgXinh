@@ -26,6 +26,7 @@ export const {
     product_categories,
     product_inventory,
     product_images,
+    product_colors,
     sustainability_attributes,
     seasonal_collections,
     product_collections,

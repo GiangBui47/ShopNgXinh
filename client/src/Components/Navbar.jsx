@@ -37,7 +37,6 @@ const Navbar = () => {
         { name: 'SHOP', path: '/collection' },
         { name: 'NEW IN', path: '/new-in' },
         { name: 'BEST SELLERS', path: '/best-sellers' },
-        { name: 'ACCESSORIES', path: '/accessories' },
         { name: 'CHILDREN', path: '/children', category_id: null },
         { name: 'MEN', path: '/men', category_id: null },
         { name: 'ABOUT', path: '/about', category_id: null },

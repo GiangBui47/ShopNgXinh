@@ -17,9 +17,6 @@ const NavCategory = () => {
             case 'SHOP':
                 basePath = '/collection';
                 break;
-            case 'ACCESSORIES':
-                basePath = '/accessories';
-                break;
             case 'CHILDREN':
                 basePath = '/children';
                 break;
@@ -51,7 +48,6 @@ const NavCategory = () => {
         { name: 'SHOP', path: '/collection' },
         { name: 'NEW IN', path: '/new-in' },
         { name: 'BEST SELLERS', path: '/best-sellers' },
-        { name: 'ACCESSORIES', path: '/accessories' },
         { name: 'CHILDREN', path: '/children' },
         { name: 'MEN', path: '/men' },
     ];
