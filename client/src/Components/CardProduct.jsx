@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { assets } from '../assets/asset';
 
@@ -8,16 +8,12 @@ const CardProduct = ({ product }) => {
     const colors = product.color || [];
     const sizes = product.size || [];
 
-    const [selectedColor, setSelectedColor] = useState(colors[0] || '');
-
-    const handleColorClick = (color) => {
-        setSelectedColor(color);
-    };
+    const defaultColor = colors[0] || '';
 
     return (
         <div className='w-full max-w-sm mx-auto '>
             <div className='relative overflow-hidden group'>
-                <Link to={'/product/' + product.product_id}>
+                <Link to={`/product/${product.sku}${defaultColor ? `?color=${encodeURIComponent(defaultColor)}` : ''}`}>
                     <img
                         src={image}
                         alt={product.alt_text || product.product_name}
@@ -32,7 +28,7 @@ const CardProduct = ({ product }) => {
 
                 <div className='absolute bottom-4 left-4 right-4 bg-white p-4 opacity-0 group-hover:opacity-100 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-10'>
                     <div className='flex justify-between items-start mb-2'>
-                        <Link to={`/product/${product.sku || product.product_id}`} className='text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors block flex-1 pr-2'>
+                        <Link to={`/product/${product.sku || product.product_id}${defaultColor ? `?color=${encodeURIComponent(defaultColor)}` : ''}`} className='text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors block flex-1 pr-2'>
                             {product.product_name}
                         </Link>
                         <span className='text-xl font-bold text-gray-900 whitespace-nowrap'>
@@ -45,17 +41,14 @@ const CardProduct = ({ product }) => {
                             Available in{' '}
                             <span className='font-medium'>
                                 {colors.map((color, i) => (
-                                    <button
+                                    <Link
+                                        to={`/product/${product.sku || product.product_id}?color=${encodeURIComponent(color)}`}
                                         key={i}
-                                        onClick={() => handleColorClick(color)}
-                                        className={`ml-1 cursor-pointer transition-colors ${selectedColor === color
-                                            ? 'text-black'
-                                            : 'text-gray-700 '
-                                            }`}
+                                        className='ml-1 cursor-pointer transition-colors text-gray-700 hover:text-black'
                                     >
                                         {color}
                                         {i < colors.length - 1 && ' |'}
-                                    </button>
+                                    </Link>
                                 ))}
                             </span>
                         </p>
@@ -71,13 +64,22 @@ const CardProduct = ({ product }) => {
                         </div>
                     )}
 
-                    <button className=' bg-black text-white py-2 px-4 rounded-full text-sm font-medium uppercase tracking-wide hover:bg-gray-800 transition-colors duration-200'>
-                        Quick Shop
-                    </button>
+                    <Link to={`/product/${product.product_id}${defaultColor ? `?color=${encodeURIComponent(defaultColor)}` : ''}`}>
+                        <button className='bg-black text-white py-2 px-4 rounded-full text-sm font-medium uppercase tracking-wide hover:bg-gray-800 transition-colors duration-200 w-full'>
+                            Quick Shop
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className='mt-2 text-center '>
-                <p className='text-lg text-gray-500'><Link to={`/product/${product.sku || product.product_id}`} className='text-black hover:text-gray-700 transition-colors'>{product.product_name}</Link> - ${product.price?.toFixed(2) || 'N/A'}</p>
+                <p className='text-lg text-gray-500'>
+                    <Link
+                        to={`/product/${product.sku || product.product_id}${defaultColor ? `?color=${encodeURIComponent(defaultColor)}` : ''}`}
+                        className='text-black hover:text-gray-700 transition-colors'
+                    >
+                        {product.product_name}
+                    </Link> - ${product.price?.toFixed(2) || 'N/A'}
+                </p>
             </div>
         </div>
     );

@@ -41,13 +41,6 @@ export const AppContextProvider = ({ children }) => {
         });
     }, [rawProducts, productImages, productInventory]);
 
-    const filteredProducts = useMemo(() => {
-        if (!selectedCategory) {
-            return enrichedProducts;
-        }
-        return enrichedProducts.filter(item => item.category_id === selectedCategory);
-    }, [enrichedProducts, selectedCategory]);
-
     useEffect(() => {
         setIsHomePage(location.pathname === '/');
         setActiveMenuKey(null);
@@ -62,7 +55,6 @@ export const AppContextProvider = ({ children }) => {
         categories,
         selectedCategory,
         setSelectedCategory,
-        filteredProducts,
         productImages,
         productInventory
     };
@@ -73,3 +65,4 @@ export const AppContextProvider = ({ children }) => {
         </AppContext.Provider>
     );
 };
+
