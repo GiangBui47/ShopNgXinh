@@ -325,34 +325,11 @@
             "reorder_level": 3
         }
     ],
-    "product_colors": [
-        {
-            "color_id": 1,
-            "product_id": 1,
-            "color_name": "Floral Print",
-            "color_code": "#FF6B6B",
-            "display_order": 1
-        },
-        {
-            "color_id": 2,
-            "product_id": 1,
-            "color_name": "Midnight Blue",
-            "color_code": "#2C3E50",
-            "display_order": 2
-        },
-        {
-            "color_id": 3,
-            "product_id": 1,
-            "color_name": "Blush Pink",
-            "color_code": "#F8C8DC",
-            "display_order": 3
-        }
-    ],
     "product_images": [
         {
             "image_id": 1,
             "product_id": 1,
-            "color_id": 1,
+            "color_code": "#FF6B6B",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Floral Print - Front View",
             "display_order": 1,
@@ -361,7 +338,7 @@
         {
             "image_id": 2,
             "product_id": 1,
-            "color_id": 1,
+            "color_code": "#FF6B6B",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Floral Print - Back View",
             "display_order": 2,
@@ -370,7 +347,7 @@
         {
             "image_id": 3,
             "product_id": 1,
-            "color_id": 1,
+            "color_code": "#FF6B6B",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Floral Print - Side View",
             "display_order": 3,
@@ -379,7 +356,7 @@
         {
             "image_id": 4,
             "product_id": 1,
-            "color_id": 1,
+            "color_code": "#FF6B6B",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Floral Print - Detail",
             "display_order": 4,
@@ -388,7 +365,7 @@
         {
             "image_id": 5,
             "product_id": 1,
-            "color_id": 2,
+            "color_code": "#2C3E50",
             "image_url": "category_coats",
             "alt_text": "Gabin Dress Midnight Blue - Front View",
             "display_order": 1,
@@ -397,7 +374,7 @@
         {
             "image_id": 6,
             "product_id": 1,
-            "color_id": 2,
+            "color_code": "#2C3E50",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Midnight Blue - Back View",
             "display_order": 2,
@@ -406,7 +383,7 @@
         {
             "image_id": 7,
             "product_id": 1,
-            "color_id": 2,
+            "color_code": "#2C3E50",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Midnight Blue - Detail",
             "display_order": 3,
@@ -415,7 +392,7 @@
         {
             "image_id": 8,
             "product_id": 1,
-            "color_id": 3,
+            "color_code": "#2C3E50",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Blush Pink - Front View",
             "display_order": 1,
@@ -424,7 +401,7 @@
         {
             "image_id": 9,
             "product_id": 1,
-            "color_id": 3,
+            "color_code": "#2C3E50",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Blush Pink - Back View",
             "display_order": 2,
@@ -433,7 +410,7 @@
         {
             "image_id": 10,
             "product_id": 1,
-            "color_id": 3,
+            "color_code": "#F8C8DC",
             "image_url": "image_product",
             "alt_text": "Gabin Dress Blush Pink - Side View",
             "display_order": 3,

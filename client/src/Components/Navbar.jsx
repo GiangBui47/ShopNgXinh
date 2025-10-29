@@ -9,15 +9,12 @@ import { assets } from '../assets/asset';
 
 const Navbar = () => {
     const {
-        activeMenuKey,
-        setActiveMenuKey,
-        isHomePage,
-        setSelectedCategory,
-        categories
+        activeMenuKey, setActiveMenuKey, isHomePage,
+        setSelectedCategory, categories,
+        getCartTotal
     } = useContext(AppContext);
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const [isHovered, setIsHovered] = useState(false);
     const [navHeight, setNavHeight] = useState(80);
     const navRef = useRef(null);
@@ -163,7 +160,7 @@ const Navbar = () => {
 
                 {/* Desktop Right Section */}
                 <div className="hidden lg:flex items-center gap-6">
-                    <button
+                    <Link to={'/cart'}
                         aria-label="Cart"
                         className={`relative cursor-pointer transition-opacity hover:opacity-80 ${isScrolledOrHovered ? 'text-black' : 'text-white'}`}
                     >
@@ -178,9 +175,9 @@ const Navbar = () => {
                         <span
                             className={`absolute -top-2 -right-3 inline-flex items-center justify-center text-[10px] leading-none w-[18px] h-[18px] ${isScrolledOrHovered ? 'text-black' : 'text-white'}`}
                         >
-                            3
+                            {getCartTotal()}
                         </span>
-                    </button>
+                    </Link>
 
                     {/* Search */}
                     <button
