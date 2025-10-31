@@ -19,7 +19,7 @@ const App = () => {
   return (
     <AppContextProvider>
       <div>
-        <Navbar />
+        {location.pathname !== '/cart' && <Navbar />}
         <ScrollToTop />
         <NavCategory />
 

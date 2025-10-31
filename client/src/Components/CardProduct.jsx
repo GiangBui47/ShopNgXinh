@@ -17,7 +17,7 @@ const CardProduct = ({ product }) => {
                     <img
                         src={image}
                         alt={product.alt_text || product.product_name}
-                        className='w-full h-150 object-cover group-hover:scale-105 transition-transform duration-300'
+                        className='w-full h-130 object-cover group-hover:scale-105 transition-transform duration-300'
                     />
                 </Link>
                 <button className='absolute top-2 right-2 bg-white rounded-full p-2 shadow-md opacity-80 hover:opacity-100 transition-opacity z-10'>
@@ -64,7 +64,7 @@ const CardProduct = ({ product }) => {
                         </div>
                     )}
 
-                    <Link to={`/product/${product.product_id}${defaultColor ? `?color=${encodeURIComponent(defaultColor)}` : ''}`}>
+                    <Link to={`/product/${product.sku}${defaultColor ? `?color=${encodeURIComponent(defaultColor)}` : ''}`}>
                         <button className='bg-black text-white py-2 px-4 rounded-full text-sm font-medium uppercase tracking-wide hover:bg-gray-800 transition-colors duration-200 w-full'>
                             Quick Shop
                         </button>
