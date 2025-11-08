@@ -131,7 +131,7 @@ const ProductDetail = () => {
     return product && (
         <div className="pt-24 px-4 lg:px-16">
             <div>
-                <div className="flex mb-5 space-x-2 cursor-pointer">
+                <div className="flex mb-5 space-x-2 items-center cursor-pointer">
                     <Link to="/">Shop</Link>
                     <p>/</p>
                     <Link to={`/collection/${toUrlSlug(category?.category_name)}`}> {category?.category_name.toLowerCase()} </Link>

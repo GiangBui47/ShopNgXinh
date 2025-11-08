@@ -20,7 +20,6 @@
 
 body {
   margin: 0;
-
   /* Use custom image if available, fall back to a subtle CSS pattern */
   background-image: url('/background-pattern.png'),
     radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
@@ -44,7 +43,7 @@ h3 {
 }
 
 h4 {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -56,5 +55,9 @@ h5 {
 li {
   font-family: "Libre Baskerville", "Times New Roman", serif;
   font-size: 13px;
+}
 
+p {
+  font-family: "Libre Baskerville", "Times New Roman", serif;
+  font-size: 13px;
 }

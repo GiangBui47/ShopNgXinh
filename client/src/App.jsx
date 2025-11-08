@@ -12,6 +12,7 @@ import FAQ from './page/FAQ';
 import ScrollToTop from './Components/ScrollToTop';
 import ProductDetail from './page/ProductDetail';
 import Cart from './page/Cart';
+import Shipping from './page/Shipping';
 
 const App = () => {
   const location = useLocation();
@@ -19,10 +20,9 @@ const App = () => {
   return (
     <AppContextProvider>
       <div>
-        {location.pathname !== '/cart' && <Navbar />}
+        {(location.pathname !== '/cart' && location.pathname !== '/shipping') && <Navbar />}
         <ScrollToTop />
         <NavCategory />
-
 
         <div>
           <Routes>
@@ -33,6 +33,7 @@ const App = () => {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/product/:sku" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/shipping" element={<Shipping />} />
           </Routes>
         </div>
         <Footer />
