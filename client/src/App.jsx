@@ -13,6 +13,12 @@ import ScrollToTop from './Components/ScrollToTop';
 import ProductDetail from './page/ProductDetail';
 import Cart from './page/Cart';
 import Shipping from './page/Shipping';
+import Account from './page/Account';
+import Orders from './Components/account/Orders';
+import Alerts from './Components/account/Alerts';
+import Information from './Components/account/Information';
+import Returns from './Components/account/Returns';
+import Wishlist from './Components/account/Wishlist';
 
 const App = () => {
   const location = useLocation();
@@ -20,7 +26,7 @@ const App = () => {
   return (
     <AppContextProvider>
       <div>
-        {(location.pathname !== '/cart' && location.pathname !== '/shipping') && <Navbar />}
+        {(location.pathname !== '/cart' && location.pathname !== '/shipping' && !location.pathname.startsWith('/account')) && <Navbar />}
         <ScrollToTop />
         <NavCategory />
 
@@ -34,6 +40,13 @@ const App = () => {
             <Route path="/product/:sku" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/shipping" element={<Shipping />} />
+            <Route path="/account" element={<Account />} >
+              <Route path="orders" element={<Orders />} />
+              <Route path="returns" element={<Returns />} />
+              <Route path="wishlist" element={<Wishlist />} />
+              <Route path="information" element={<Information />} />
+              <Route path="alerts" element={<Alerts />} />
+            </Route>
           </Routes>
         </div>
         <Footer />

@@ -139,15 +139,15 @@ const Shipping = () => {
                             </div>
                             <p className='mt-4 ms-8'>Please choose payment method</p>
                             <div className='flex items-center gap-5 mt-5 justify-center'>
-                                <button className={`w-[50px] h-[50px] text-xl lg:w-[100px] lg:h-[100px] lg:text-2xl border cursor-pointer ${openPayment === 'paypal' ? 'border-gray-950' : 'text-gray-300 border-gray-400'}`}
+                                <button className={`w-[50px] h-[50px] text-xl lg:w-[100px] lg:h-[100px] lg:text-2xl border cursor-pointer ${openPayment === 'paypal' ? 'border-gray-950 transition-all' : 'text-gray-300 border-gray-400'}`}
                                     onClick={() => setOpenPayment('paypal')} >
                                     Paypal
                                 </button>
-                                <button className={`w-[50px] h-[50px] text-xl lg:w-[100px] lg:h-[100px] lg:text-2xl border cursor-pointer ${openPayment === 'visa' ? 'border-gray-950' : 'text-gray-300 border-gray-400'}`}
+                                <button className={`w-[50px] h-[50px] text-xl lg:w-[100px] lg:h-[100px] lg:text-2xl border cursor-pointer ${openPayment === 'visa' ? 'border-gray-950 transition-all' : 'text-gray-300 border-gray-400'}`}
                                     onClick={() => setOpenPayment('visa')} >
                                     Visa
                                 </button>
-                                <button className={`w-[50px] h-[50px] text-xl lg:w-[100px] lg:h-[100px] lg:text-2xl borde cursor-pointer ${openPayment === 'googlepay' ? 'border-gray-950' : 'text-gray-300 border-gray-400'}`}
+                                <button className={`w-[50px] h-[50px] text-xl lg:w-[100px] lg:h-[100px] lg:text-2xl borde cursor-pointer ${openPayment === 'googlepay' ? 'border-gray-950 transition-all' : 'text-gray-300 border-gray-400'}`}
                                     onClick={() => setOpenPayment('googlepay')} >
                                     Google Pay
                                 </button>

@@ -12,9 +12,10 @@ import category_tops from './category_tops.avif'
 import category_trousers from './category_trousers.avif'
 import mockData from '../data/mockData.json'
 import image_product from './image_product.avif'
+import bg_account from './bg_account.jfif'
 
 export const assets = {
-    logo, heroImage, category_bag,
+    logo, heroImage, bg_account, category_bag,
     category_coats, category_dress, category_jackets,
     category_jewelry, category_knitwear, category_shoe, category_shop,
     category_tops, category_trousers, image_product

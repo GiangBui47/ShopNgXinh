@@ -18,7 +18,7 @@ const NavCart = () => {
                     <RiArrowLeftWideFill />
                     CONTINUE SHOPPING
                 </Link>
-                <Link to={'/account'}>
+                <Link to={'/account/orders'}>
                     ACCOUNT
                 </Link>
             </div>
